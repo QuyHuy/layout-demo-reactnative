@@ -9,6 +9,7 @@ import BackgroundCarousel from './components/BackgroundCarousel';
 import Information from './components/Information';
 import ButtonPage from './components/ButtonPage';
 import TabContent from './components/TabContent';
+import BranchProduct from './components/BranchProduct';
 
 const images = [
     "https://c.imgz.jp/923/45225923/45225923b_14_d_500.jpg",
@@ -47,7 +48,12 @@ export default class App extends Component {
                     <Information></Information>
                     <ButtonPage></ButtonPage>
                     <TabContent></TabContent>
-                   
+                    <View style={{height: 1, width: DEVICE_WIDTH, backgroundColor: 'rgb(136, 136, 136)', opacity: 0.2}}></View>
+                    <View style={{width: DEVICE_WIDTH, height: 60, backgroundColor: '#FAFAFA', justifyContent: 'center', alignSelf: 'center'}}>
+                        <Text style={{textAlign: 'center', color: '#08c', fontSize: 11}}>返品について  <Text style={{borderLeftWidth: 1, borderLeftColor: 'lightgray'}}>  ポイントについて</Text></Text>
+                    </View>
+                    <View style={{height: 1, width: DEVICE_WIDTH, backgroundColor: 'rgb(136, 136, 136)', opacity: 0.2}}></View>
+                    <BranchProduct></BranchProduct>
                 </View>
             </ScrollView>
         );

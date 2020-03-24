@@ -18,7 +18,6 @@ export default class FlastListItem extends Component {
                         <Text style={{fontSize: 10, color: '#888'}}>{this.props.item.create}</Text>
                     </View>
                 </View>
-               
             </View>
             
         )
